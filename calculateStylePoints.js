@@ -1,13 +1,13 @@
 const calcStylePoints = (...stylePoints) => {
-  let notesArray = [...stylePoints];
-  const maxIndex = notesArray.indexOf(Math.max(...notesArray));
-  const minIndex = notesArray.indexOf(Math.min(...notesArray));
+  let pointsForStyle = [...stylePoints];
+  const maxIndex = pointsForStyle.indexOf(Math.max(...pointsForStyle));
+  const minIndex = pointsForStyle.indexOf(Math.min(...pointsForStyle));
 
-  notesArray.splice(maxIndex, 1);
-  notesArray.splice(minIndex, 1);
+  pointsForStyle.splice(maxIndex, 1);
+  pointsForStyle.splice(minIndex, 1);
 
-  const notesSum = notesArray.reduce((acc, current) => acc + current);
-  return notesSum;
+  const pointsSum = pointsForStyle.reduce((acc, current) => acc + current);
+  return pointsSum;
 }
 
 module.exports = calcStylePoints;
