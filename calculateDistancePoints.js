@@ -38,7 +38,9 @@ const calcDistancePoints = (distance, hillSize, kPoint) => {
       }
     }
   }
-  return points.toFixed(1);
+
+  const pointsSum = points.toFixed(1);
+  return pointsSum;
 }
 
 module.exports = calcDistancePoints;
