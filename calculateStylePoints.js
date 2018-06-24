@@ -11,3 +11,5 @@ const calcStylePoints = (...stylePoints) => {
 }
 
 module.exports = calcStylePoints;
+
+// dlaczego w package test:style nie działał - do zapytania we wtorek
