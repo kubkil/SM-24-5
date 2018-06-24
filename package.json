@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha *.test.js",
-    "test:watch": "mocha -w -b *.test.js",
-    "test:style": "mocha calculateStylePoints.js",
-    "test:distance": "mocha calculateDistancePoints.js"
+    "test:watch": "mocha -w -b *.test.js"
   },
   "keywords": [],
   "author": "",
