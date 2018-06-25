@@ -22,4 +22,11 @@ describe('calcStylePoints', () => {
 
     assert.equal(actual, expected);
   });
+
+  it('should return 55.5', () => {
+    const actual = calcStylePoints([18.5, 18.5, 18.5, 18.0, 18.5]);
+    const expected = 55.5;
+
+    assert.equal(actual, expected);
+  });
 });

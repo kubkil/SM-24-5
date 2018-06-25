@@ -69,5 +69,12 @@ describe('calcDistancePoints', () => {
 
       assert.equal(actual, expected);
     });
+
+    it('should return 151.2', () => {
+      const actual = calcDistancePoints(226, 'mammoth', 200);
+      const expected = 151.2;
+
+      assert.equal(actual, expected);
+    });
   });
 });
